@@ -62,8 +62,8 @@
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jButton4" max="32767" attributes="0"/>
-                          <Component id="jButton3" min="-2" pref="135" max="-2" attributes="0"/>
+                          <Component id="jButton3" max="32767" attributes="0"/>
+                          <Component id="jButton4" pref="148" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Component id="metaphaseEditor2" min="-2" pref="906" max="-2" attributes="0"/>

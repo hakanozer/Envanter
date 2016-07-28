@@ -145,8 +145,8 @@ public class TeklifGonderimi extends javax.swing.JFrame {
                             .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)))
                     .addComponent(metaphaseEditor2, javax.swing.GroupLayout.PREFERRED_SIZE, 906, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -203,7 +203,7 @@ public class TeklifGonderimi extends javax.swing.JFrame {
                 urunTuru = jComboBox1.getSelectedItem().toString();
                 DB db = new DB();
                 String bos = "";
-                int sonuc = db.baglan().executeUpdate("insert into tekliflistesi values(null,'" + jTextField2.getText() + "', '" + bos + "',now());");
+                int sonuc = db.baglan().executeUpdate("insert into tekliflistesi values(null,'" + jTextField2.getText() + "', '" + bos + "',now(),null);");
                 if (sonuc > 0) {
                     jButton1.setEnabled(true);
                     jButton2.setEnabled(false);
