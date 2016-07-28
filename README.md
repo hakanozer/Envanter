@@ -4,14 +4,6 @@ Bu proje java EE, Hibernate, MYSQL Kullanılarak bir işletmenin bütün envante
 
 # PROJE EKRAN GÖRÜNTÜLERİ
 <p>
-<a href="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/1.jpg" target="_blank">
-<img src="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/1.jpg" width="200" style="max-width:100%;"></a>
-
-<a href="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/2.jpg" target="_blank">
-<img src="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/2.jpg" width="200" style="max-width:100%;"></a>
-
-<a href="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/3.jpg" target="_blank">
-<img src="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/3.jpg" width="200" style="max-width:100%;"></a>
 
 <a href="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/4.jpg" target="_blank">
 <img src="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/4.jpg" width="200" style="max-width:100%;"></a>
@@ -69,5 +61,15 @@ Bu proje java EE, Hibernate, MYSQL Kullanılarak bir işletmenin bütün envante
 
 <a href="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/22.jpg" target="_blank">
 <img src="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/22.jpg" width="200" style="max-width:100%;"></a>
+
+<a href="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/1.jpg" target="_blank">
+<img src="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/1.jpg" width="200" style="max-width:100%;"></a>
+
+<a href="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/2.jpg" target="_blank">
+<img src="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/2.jpg" width="200" style="max-width:100%;"></a>
+
+<a href="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/3.jpg" target="_blank">
+<img src="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/3.jpg" width="200" style="max-width:100%;"></a>
+
 
 </p>
