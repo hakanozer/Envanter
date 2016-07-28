@@ -1,8 +1,9 @@
-# Java-Masaustu-Projeler
+# Envanter
 
 Bu proje java EE, Hibernate, MYSQL Kullanılarak bir işletmenin bütün envanter kontrol ihtiyaçlarını gidermeyi hedefler.
 
 # PROJE EKRAN GÖRÜNTÜLERİ
+<p>
 <a href="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/1.jpg" target="_blank">
 <img src="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/1.jpg" width="200" style="max-width:100%;"></a>
 
@@ -69,3 +70,4 @@ Bu proje java EE, Hibernate, MYSQL Kullanılarak bir işletmenin bütün envante
 <a href="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/22.jpg" target="_blank">
 <img src="https://github.com/hakanozer/Envanter/blob/master/Ekran_Goruntuleri/22.jpg" width="200" style="max-width:100%;"></a>
 
+</p>
