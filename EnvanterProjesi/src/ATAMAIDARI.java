@@ -1,4 +1,4 @@
-package envanter;
+package envanterproje;
 
 import java.sql.ResultSet;
 import javax.swing.DefaultComboBoxModel;
@@ -10,11 +10,6 @@ public class ATAMAIDARI extends javax.swing.JFrame {
     String il = "";
     String ilce = "";
     String subeID = "";
-//    DefaultComboBoxModel dcsube = new DefaultComboBoxModel();
-//    DefaultComboBoxModel dcdil = new DefaultComboBoxModel();
-//    DefaultComboBoxModel dcdilce = new DefaultComboBoxModel();
-//    DefaultComboBoxModel dcilce = new DefaultComboBoxModel();
-//     DefaultComboBoxModel illerdc = new DefaultComboBoxModel();
 
     public ATAMAIDARI() {
         initComponents();
@@ -27,7 +22,6 @@ public class ATAMAIDARI extends javax.swing.JFrame {
         DuzenleSubelerComboGetir();
         DuzenleİllerComboGetir();
         subeadibul();
-
     }
 
     @SuppressWarnings("unchecked")
@@ -67,7 +61,8 @@ public class ATAMAIDARI extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Atama İşlemleri");
         setMinimumSize(new java.awt.Dimension(800, 600));
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("İDS ATAMA"));
@@ -108,7 +103,6 @@ public class ATAMAIDARI extends javax.swing.JFrame {
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/envanter/atama.png"))); // NOI18N
         jButton1.setText("ŞUBEYE ATA");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,7 +110,6 @@ public class ATAMAIDARI extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/envanter/yonetici (2).png"))); // NOI18N
         jButton3.setText("İDS EKLEME EKRANI");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,15 +171,18 @@ public class ATAMAIDARI extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(7, 7, 7)
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel5))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton3))
@@ -230,7 +226,6 @@ public class ATAMAIDARI extends javax.swing.JFrame {
 
         jLabel8.setText("ADI SOYADI:");
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/envanter/duzenle.png"))); // NOI18N
         jButton2.setText("DÜZENLE");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -240,7 +235,7 @@ public class ATAMAIDARI extends javax.swing.JFrame {
 
         jLabel7.setText("İDARİ İŞLER SORUMLUSU");
 
-        jButton4.setText("Kişinin Atamasını Kaldır");
+        jButton4.setText("KİŞİNİN ATAMASINI KALDIR");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -267,12 +262,7 @@ public class ATAMAIDARI extends javax.swing.JFrame {
                         .addComponent(jLabel8)
                         .addGap(18, 18, 18)
                         .addComponent(jTextField2))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
                         .addGap(21, 21, 21)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel11)
@@ -280,6 +270,10 @@ public class ATAMAIDARI extends javax.swing.JFrame {
                             .addComponent(jLabel12))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(jButton4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton2))
                             .addComponent(jComboBox5, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jComboBox6, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jComboBox4, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -288,33 +282,32 @@ public class ATAMAIDARI extends javax.swing.JFrame {
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
+                .addContainerGap(22, Short.MAX_VALUE)
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel10))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel11))
                         .addGap(18, 18, 18)
                         .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
-                        .addComponent(jLabel11)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel12)
-                        .addGap(18, 18, 18)))
+                    .addComponent(jLabel12))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton4)))
+                    .addComponent(jButton4)
+                    .addComponent(jButton2))
+                .addGap(0, 14, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -332,10 +325,10 @@ public class ATAMAIDARI extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addContainerGap(249, Short.MAX_VALUE))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(233, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -359,7 +352,7 @@ public class ATAMAIDARI extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(0, 3, Short.MAX_VALUE)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addContainerGap()
@@ -384,6 +377,7 @@ public class ATAMAIDARI extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 String idsID = "";
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
@@ -511,28 +505,30 @@ String idsID = "";
         subeDuzenleSubeIDbul();
         DB db = new DB();
         String bosVeri = null;
-        if(jTextField2.getText().equals(""))
-        {JOptionPane.showMessageDialog(rootPane, "Tablodan Ataması kaldırılacak Kişiyi Seçiniz");}
-        else {try {
-            int sonucN = db.baglan().executeUpdate("update subeler set sube_ids=null where sube_id='" + subeDuzenleID + "'");
-            int sonucM = db.baglan().executeUpdate("update ids set ids_sub_id=null where ids_id='" + idsAtamaDuzenle + "'");
-            
-            
-            if (sonucN > 0 && sonucM > 0) {
+        if (jTextField2.getText().equals("")) {
+            JOptionPane.showMessageDialog(rootPane, "Tablodan Ataması kaldırılacak Kişiyi Seçiniz");
+        } else {
+            try {
+                int sonucN = db.baglan().executeUpdate("update subeler set sube_ids=null where sube_id='" + subeDuzenleID + "'");
+                int sonucM = db.baglan().executeUpdate("update ids set ids_sub_id=null where ids_id='" + idsAtamaDuzenle + "'");
 
-                JOptionPane.showMessageDialog(rootPane, "Kişinin Şube Ataması Kaldırıldı ...");
-                idariTabloDuzenleGetir();
-                idariTabloGetir();
+                if (sonucN > 0 && sonucM > 0) {
 
-                jTextField2.setText("");
+                    JOptionPane.showMessageDialog(rootPane, "Kişinin Şube Ataması Kaldırıldı ...");
+                    idariTabloDuzenleGetir();
+                    idariTabloGetir();
 
-            }
+                    jTextField2.setText("");
 
-        } catch (Exception e) {
-            System.err.println("Güncelleme Hatası.." + e);
-        
+                }
+
+            } catch (Exception e) {
+                System.err.println("Güncelleme Hatası.." + e);
+
     }//GEN-LAST:event_jButton4ActionPerformed
-        }}
+        }
+    }
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -555,6 +551,20 @@ String idsID = "";
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(ATAMAIDARI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
@@ -631,7 +641,7 @@ String idsID = "";
         DefaultComboBoxModel dc = new DefaultComboBoxModel();
         try {
             DB db = new DB();
-            ResultSet rs = db.baglan().executeQuery("select ilceler.ilce_adi as ilceadi from ilceler left JOIN sehirler on ilceler.il_id=sehirler.sehir_id where sehirler.sehir_adi='" + il + "'");
+            ResultSet rs = db.baglan().executeQuery("select ilceler.ilce_adi as ilceadi from ilceler left JOIN sehirler on ilceler.ilce_il_id=sehirler.sehir_id where sehirler.sehir_adi='" + il + "'");
             dc.addElement("Lütfen İlçe Seçimi Yapınız");
             while (rs.next()) {
                 dc.addElement(rs.getString("ilceadi"));
@@ -650,7 +660,7 @@ String idsID = "";
         try {
 
             DB db = new DB();
-            ResultSet rs = db.baglan().executeQuery("select subeler.sube_ids as subeids,subeler.sube_adi as subeadi,subeler.sube_id as subeid from subeler LEFT JOIN ilceler on ilceler.il_id=subeler.sube_sehir_id LEFT JOIN sehirler on ilceler.il_id=sehirler.sehir_id where ilceler.ilce_adi='" + ilce + "' AND subeler.sube_ilce_id=ilceler.ilce_id");
+            ResultSet rs = db.baglan().executeQuery("select subeler.sube_ids as subeids,subeler.sube_adi as subeadi,subeler.sube_sehir_id as subeid from subeler LEFT JOIN ilceler on ilceler.ilce_il_id=subeler.sube_sehir_id LEFT JOIN sehirler on ilceler.ilce_il_id=sehirler.sehir_id where ilceler.ilce_adi='" + ilce + "' AND subeler.sube_sehir_id=ilceler.ilce_il_id");
 
             dcsube.addElement("Lütfen Şube Seçimi Yapınız");
             while (rs.next()) {
@@ -720,16 +730,11 @@ String idsID = "";
         DefaultTableModel table = new DefaultTableModel();
         table.addColumn("ID");
         table.addColumn("ADI");
-//        table.addColumn("SOYADI");
         table.addColumn("SORUMLU OLDUĞU ŞUBE");
-//        table.addColumn("SORUMLU OLDUĞU ŞEHİR");
-//        table.addColumn("SORUMLU OLDUĞU ŞUBE");
-//        table.addColumn("SOYADI");
 
         try {
             DB db = new DB();
             String a = "select * from ids LEFT JOIN subeler on subeler.sube_id=ids.ids_sub_id";
-//            String b="SELECT  * from subeler left join ids on subeler.sube_ids=ids.ids_sub_id";
 
             ResultSet rs = db.baglan().executeQuery(a);
 
@@ -751,7 +756,7 @@ String idsID = "";
         DefaultComboBoxModel dcilce = new DefaultComboBoxModel();
         try {
             DB db = new DB();
-            ResultSet rs = db.baglan().executeQuery("select ilceler.ilce_adi as ilceadi from ilceler left JOIN sehirler on ilceler.il_id=sehirler.sehir_id where sehirler.sehir_adi='" + il + "'");
+            ResultSet rs = db.baglan().executeQuery("select ilceler.ilce_adi as ilceadi from ilceler left JOIN sehirler on ilceler.ilce_il_id=sehirler.sehir_id where sehirler.sehir_adi='" + il + "'");
             dcilce.addElement("Lütfen İlçe Seçimi Yapınız");
             while (rs.next()) {
 
@@ -768,7 +773,7 @@ String idsID = "";
         try {
 
             DB db = new DB();
-            ResultSet rs = db.baglan().executeQuery("select subeler.sube_adi as subeadi,subeler.sube_id as subeid from subeler LEFT JOIN ilceler on ilceler.il_id=subeler.sube_sehir_id LEFT JOIN sehirler on ilceler.il_id=sehirler.sehir_id where ilceler.ilce_adi='" + ilce + "' AND subeler.sube_ilce_id=ilceler.ilce_id ");
+            ResultSet rs = db.baglan().executeQuery("select subeler.sube_adi as subeadi,subeler.sube_sehir_id as subeid from subeler LEFT JOIN ilceler on ilceler.ilce_il_id=subeler.sube_sehir_id LEFT JOIN sehirler on ilceler.ilce_il_id=sehirler.sehir_id where ilceler.ilce_adi='" + ilce + "' AND subeler.sube_ilce_id=ilceler.ilce_id ");
 
             dcdilce.addElement("Lütfen Şube Seçimi Yapınız");
             while (rs.next()) {
@@ -839,15 +844,4 @@ String idsID = "";
         }
     }
 
-//    public void atanmistablogetir() {
-//        try {
-//            DB db = new DB();
-//            String query = "select * from subeler inner  join ids on subeler.sube_ids=ids.ids_sub_id ";
-//            ResultSet rs = db.baglan().executeQuery(query);
-//            rs.next();
-//
-//        } catch (Exception e) {
-//        }
-//
-//    }
 }
